@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* Navbar  start */
+
+#navbar {
+    background: #f9f9f9;
+}
+
+#logo {
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+
+#logo samp {
+    color: #ffa500;
+}
+
+.navbar-toggler samp {
+    color: #ffa500;
+}
+
+.navbar .nav {
+    margin-left: 20px;
+}
+
+.nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+
+.nav-item .nav-link:hover {
+    background: #ffa500;
+    color: #f9f9f9;
+}
+
+.navbar form button {
+    background: orange;
+    color: white;
+    border: none;
+}
+
+
+/* Navbar End */
+
+
+/*Home section start*/
+
+.home {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(images/backgroung.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home .content {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.home .content h5 {
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+
+.home .content h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+
+.changecontent::after {
+    content: "";
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 30s infinite linear;
+}
+
+@keyframes changetext {
+    0% {
+        content: " Mnrani";
+    }
+    10% {
+        content: " Mida creek";
+    }
+    20% {
+        content: " Marafa-Hell Kitchen";
+    }
+    30% {
+        content: " Watam National Marine Park";
+    }
+    40% {
+        content: " Mzima Springs";
+    }
+    50% {
+        content: " Fort jesus Museum";
+    }
+    60% {
+        content: " Haller park";
+    }
+    70% {
+        content: " Roaring Rockds";
+    }
+    80% {
+        content: " Vasco da Gama Pillar";
+    }
+    90% {
+        content: " Sheldrick falls";
+    }
+    100% {
+        content: " Mama Ngina's Drive";
+    }
+}
+
+.home .content p {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.home .content a {
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.home .content a:hover {
+    background: #ffa500;
+    color: white;
+}
+
+@media (max-width:850px) {
+    .home {
+        background-position: 50%;
+    }
+}
+
+@media (max-width:850px) {
+    .home .content h5 {
+        font-size: 25px;
+    }
+    .home .content h1 {
+        font-size: 38px;
+    }
+    .home .content p {
+        font-size: 13px;
+    }
+}
+
+
+/*Home section End*/
+
+
+/* section BOOK start*/
+
+.book {
+    background: #f9f9f9;
+    padding: 50px;
+}
+
+.main-text h1 {
+    text-align: center;
+    text-shadow: 0px 1px black;
+}
+
+.main-text h1 samp {
+    color: #ffa500;
+}
+
+.book .card {
+    border-radius: 30px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+
+.book .row {
+    margin-top: 30px;
+}
+
+.book form input {
+    padding: 10px;
+    color: black;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    border-radius: 160px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+
+.book form textarea {
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+}
+
+.book .submit {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #ffa500;
+    color: #f9f9f9;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.book .submit:hover {
+    width: 170px;
+}
+
+@media (max-width:765px) {
+    .book {
+        padding: 0;
+    }
+    .main-text h1 {
+        margin-top: 20px;
+    }
+}
+
+
+/* section  Book End*/
+
+
+/* section packages Start */
+
+.main-txt h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+
+.main-txt h1 samp {
+    color: #ffa500;
+}
+
+.packages .card {
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.packages .card img {
+    border-radius: 5px;
+    padding-top: 30px;
+}
+
+.packages .card .card-body {
+    background: transparent;
+}
+
+.packages .card .card-body h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.packages .card .card-body p {
+    font-size: 15px;
+}
+
+.checked {
+    color: #ffa500;
+}
+
+.star {
+    font-size: 15px;
+}
+
+.packages .card .card-body h6 {
+    font-size: 20px;
+}
+
+.packages .card .card-body a {
+    padding: 10px;
+    text-decoration: none;
+    background: #ffa500;
+    color: white;
+    border-radius: 5px;
+}
+
+
+/* section packages End    */
+
+
+/* section about  start */
+
+.about {
+    background: #f9f9f9;
+    margin-top: 50px;
+}
+
+.about .card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.about .card i {
+    font-size: 80px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+}
+
+.about .card .card-body h3 {
+    font-weight: 600;
+}
+
+.about .card .card-body {
+    text-align: center;
+}
+
+
+/* section about  End */
